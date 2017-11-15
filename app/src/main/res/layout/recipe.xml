@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#3D3C3A" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/iv_detail"
+                android:layout_marginTop="3dp"
+                android:text="Recipe"
+                android:textColor="#6e7b8b"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView2"
+                android:text="TextView"
+                android:textColor="#8b7b8b"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvTD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvname"
+                android:text="Ingredients"
+                android:textColor="#6e7b8b"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvingr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvTD"
+                android:text="TextView"
+                android:textColor="#8b7b8b"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvingr"
+                android:text="Steps"
+                android:textColor="#6e7b8b"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvsteps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvK"
+                android:text="TextView"
+                android:textColor="#8b7b8b"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
