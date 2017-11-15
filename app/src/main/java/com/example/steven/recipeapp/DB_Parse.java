@@ -25,7 +25,7 @@ public class DB_Parse extends Activity {
         String msg_ingr = ident.getStringExtra("dataIngredient");
         String msg_steps = ident.getStringExtra("dataSteps");
         Im = (ImageView) findViewById(R.id.iv_detail);
-        tv_name = (TextView) findViewById(R.id.tvname);
+        tv_name = (TextView) findViewById(R.id.tv_name);
         tv_ingr = (TextView) findViewById(R.id.tvingr);
         tv_steps = (TextView) findViewById(R.id.tvsteps);
         Im.setImageResource(msg_im);

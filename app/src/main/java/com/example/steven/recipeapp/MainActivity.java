@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             cursor = db.rawQuery("SELECT * FROM recipe ORDER BY recipe_name ASC", null);
             adapter = new SimpleCursorAdapter(this, R.layout.isi_lv, cursor,
-                    new String[]{"name", "ingredients"}, new int[]{
+                    new String[]{"recipe_name", "recipe_description"}, new int[]{
                     R.id.tvname, R.id.tvingr});
             lv.setAdapter(adapter);
             lv.setTextFilterEnabled(true);
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         this,
                         R.layout.isi_lv,
                         cursor,
-                        new String[] { "recipe", "ingr"},
+                        new String[] { "recipe_name", "recipe_description"},
                         new int[] { R.id.tvname, R.id.tvingr});
                 if (adapter.getCount() == 0) {
                     Toast.makeText(
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         this,
                         R.layout.isi_lv,
                         cursor,
-                        new String[] { "recipe", "ingr"},
+                        new String[] { "recipe_name", "recipe_description"},
                         new int[] { R.id.tvname, R.id.tvingr});
                 lv.setAdapter(adapter);
                 lv.setTextFilterEnabled(true);

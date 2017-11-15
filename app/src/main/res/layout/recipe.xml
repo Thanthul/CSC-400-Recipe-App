@@ -31,7 +31,8 @@
                 android:layout_marginTop="3dp"
                 android:text="Recipe"
                 android:textColor="#6e7b8b"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="24dp"/>
 
             <TextView
                 android:id="@+id/tvname"
@@ -39,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/textView2"
-                android:text="TextView"
+                android:text="Scrambled Eggs"
                 android:textColor="#8b7b8b"
                 android:textStyle="italic" />
 
@@ -51,7 +52,8 @@
                 android:layout_below="@+id/tvname"
                 android:text="Ingredients"
                 android:textColor="#6e7b8b"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="24dp"/>
 
             <TextView
                 android:id="@+id/tvingr"
@@ -59,7 +61,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/tvTD"
-                android:text="TextView"
+                android:text="4	eggs
+1/4 cup	milk
+pinch of salt and pepper
+2 tsp.	butter"
                 android:textColor="#8b7b8b"
                 android:textStyle="italic" />
 
@@ -71,7 +76,8 @@
                 android:layout_below="@+id/tvingr"
                 android:text="Steps"
                 android:textColor="#6e7b8b"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="24dp"/>
 
             <TextView
                 android:id="@+id/tvsteps"
@@ -79,7 +85,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/tvK"
-                android:text="TextView"
+                android:text="Beat eggs, milk, salt and pepper in medium bowl until blended.
+
+Heat butter in large nonstick skillet over medium heat until hot. Pour in egg mixture. As eggs begin to set, gently pull the eggs across the pan with a spatula, forming large soft curds.
+
+Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly. Remove from heat. Serve immediately."
                 android:textColor="#8b7b8b"
                 android:textStyle="italic" />
         </LinearLayout>

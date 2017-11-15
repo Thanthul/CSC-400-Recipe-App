@@ -17,10 +17,10 @@ public class loading extends Activity implements TaskFinishedListener {
         // Find the progress bar
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.activity_splash_progress_bar);
         // Start your loading
-        new task(progressBar, this).execute("www.google.co.uk"); // Pass in whatever you need a url is just an example we don't use it in this tutorial
+        new task(progressBar, this).execute("");
     }
 
-    // This is the callback for when your async task has finished
+
     @Override
     public void onTaskFinished() {
         completeSplash();
