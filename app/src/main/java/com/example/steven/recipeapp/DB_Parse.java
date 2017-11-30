@@ -8,9 +8,9 @@ import android.widget.TextView;
 import android.widget.ImageSwitcher;
 
 public class DB_Parse extends Activity {
-    ImageView Im;
+    //ImageView Im;
     TextView tv_name, tv_ingr, tv_steps, id;
-    int msg_im;
+   // int msg_im;
     ImageSwitcher imageSwitcher;
 
 
@@ -20,15 +20,15 @@ public class DB_Parse extends Activity {
         setContentView(R.layout.recipe);
 
         Intent ident = getIntent();
-        msg_im = ident.getIntExtra("dataIM", 0);
+        //msg_im = ident.getIntExtra("dataIM", 0);
         String msg_name = ident.getStringExtra("dataName");
         String msg_ingr = ident.getStringExtra("dataIngredient");
         String msg_steps = ident.getStringExtra("dataSteps");
-        Im = (ImageView) findViewById(R.id.iv_detail);
+       //Im = (ImageView) findViewById(R.id.iv_detail);
         tv_name = (TextView) findViewById(R.id.tv_name);
         tv_ingr = (TextView) findViewById(R.id.tvingr);
         tv_steps = (TextView) findViewById(R.id.tvsteps);
-        Im.setImageResource(msg_im);
+        //Im.setImageResource(msg_im);
         tv_name.setText(msg_name);
         tv_ingr.setText(msg_ingr);
         tv_steps.setText(msg_steps);

@@ -14,8 +14,11 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
+import android.view.View.OnClickListener;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
     protected ListView lv;
     protected ListAdapter adapter;
     SQLiteDatabase db;
@@ -26,11 +29,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.menu);
 
         db = (new DB_Recipe(this)).getWritableDatabase();
         lv = (ListView) findViewById(R.id.lv);
         et_db = (EditText) findViewById(R.id.et);
+        Button button1 = (Button) this.findViewById(R.id.button1);
+        Button button2 = (Button) this.findViewById(R.id.button2);
+        Button button3 = (Button) this.findViewById(R.id.button3);
+
+        button1.setOnClickListener(new OnClickListener(){
+            public void onClick(View v){
+                setContentView(R.layout.main);
+
+            }
+        });
+        button2.setOnClickListener(new OnClickListener(){
+            public void onClick(View v){
+                setContentView(R.layout.main);
+            }
+        });
 
 
         try {

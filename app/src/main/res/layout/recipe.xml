@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/textView2"
-                android:text="Scrambled Eggs"
+                android:text="Recipe Desc"
                 android:textColor="#8b7b8b"
                 android:textStyle="italic" />
 
@@ -61,10 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/tvTD"
-                android:text="4	eggs
-1/4 cup	milk
-pinch of salt and pepper
-2 tsp.	butter"
+                android:text="Ingr Descript"
                 android:textColor="#8b7b8b"
                 android:textStyle="italic" />
 
@@ -85,11 +82,7 @@ pinch of salt and pepper
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/tvK"
-                android:text="Beat eggs, milk, salt and pepper in medium bowl until blended.
-
-Heat butter in large nonstick skillet over medium heat until hot. Pour in egg mixture. As eggs begin to set, gently pull the eggs across the pan with a spatula, forming large soft curds.
-
-Continue cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly. Remove from heat. Serve immediately."
+                android:text="Step Descript"
                 android:textColor="#8b7b8b"
                 android:textStyle="italic" />
         </LinearLayout>
